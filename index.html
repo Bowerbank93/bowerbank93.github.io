@@ -1,1 +1,258 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="Personal portfolio website" />
+    <meta name="author" content="Malachi Bowerbank" />
+
+    <!-- Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Carter+One|Nunito&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome CDN -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css "/>
+
+    <!-- Animate On Scroll CDN -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Malachi Bowerbank: Web Developer</title>
+
+  </head>
+
+  <body>
+
+    <div class="container">
+      <header>
+        <nav class="navbar">
+          <ul class="nav-list">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="https://drive.google.com/open?id=1Kz0v5MWpDONVzNUHPekMna_IbISp8kAT" target="_blank">Resume</a></li>
+          </ul>
+        </nav>
+
+        <div class="landing">
+          <div class="landing-text" data-aos="zoom-in" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+            <h1>Malachi <span>Bowerbank</span></h1>
+            <p>Web Developer</p>
+          </div>
+        </div>
+      </header>
+
+      <div class="hero" data-aos="fade-up" id="about">
+        <div class="hero-text">
+          <h1>About Myself</h1>
+          <p class="blurb">
+            I am a self-taught web developer and multimedia artist. I had always
+            had an interest and appreciation for graphic and visual media and
+            during my time in school I developed a newfound interest in
+            programming. These two interests seemed to find the perfect home for
+            me in web development. While my education started me in the
+            front-end, I have taken it upon myself to learn the ins and outs of
+            web development and am eager to learn and grow into a fullstack web
+            developer.
+          </p>
+          <p class="shout">I hope that will join me on my journey!</p>
+        </div>
+      </div>
+      <div class="skill-container" data-aos="fade-up" data-aos-offset="300" data-aos-duration="1000">
+        <div class="section-heading">
+          <h1>Some Of My Skills</h1>
+        </div>
+        <div class="skill-list">
+            <div class="skillbox">
+
+                <div class="skill-img">
+                    <img src="/imgs/website.jpg" alt="" />
+                </div>
+
+                <h3>Front-End</h3>
+                <span class="skills">HTML</span>
+                <span class="skills">HTML 5</span>
+                <span class="skills">CSS</span>
+                <span class="skills">CSS 3</span>
+                <span class="skills">Sass/Scss</span>
+                <span class="skills">Bootstrap</span>
+                <span class="skills">JavaScript</span>
+                <span class="skills">ES6</span>
+                <span class="skills">JQuery</span>
+                <span class="skills">JSON</span>
+
+                <div class="skill-desc">
+                  <p>
+                    I am well-verse in the core technologies in the front-end. I have 3 years of experience with HTML and css
+                    including using features from their latest editions. All of my Javascript experience is self-taught outside
+                    of my initial academic background.
+                  </p>
+                </div>
+            </div>
+
+            <div class="skillbox">
+
+                <div class="skill-img">
+                    <img src="/imgs/programming.jpg" alt=""/>
+                </div>
+
+                <h3>Back-End</h3>
+                <span class="skills">Node JS</span>
+                <span class="skills">NPM</span>
+                <span class="skills">Express JS</span>
+                <span class="skills">Embedded JavaScript (EJS)</span>
+                <span class="skills">Git</span>
+                <span class="skills">MongoDB</span>
+
+                <div class="skill-desc">
+                    <p>
+                      My inital intention was to focus my career efforts entirely on front-end development but the more
+                      invested I got into designing and developing, the more I wanted to work with all the other aspects of development 
+                      as well. As a result, I took it upon myself to start learning the back-end. I hope to learn Angular JS soon so that I 
+                      may have the full MEAN stack added to my skillset.
+                    </p>
+                  </div>
+                
+            </div>
+
+            <div class="skillbox">
+                <div class="skill-img">
+                    <img src="/imgs/tablet.jpg" alt="" />
+                </div>
+                <h3>Graphic Technologies</h3>
+                <span class="skills">Adobe Photoshop</span>
+                <span class="skills">Adobe Illustrator</span>
+                <span class="skills">Adobe InDesign</span>
+                <span class="skills">AutoCAD</span>
+                <span class="skills">AutoDesk Inventor</span>
+                <span class="skills">3D Studio Max</span>
+
+                <div class="skill-desc">
+                    <p>
+                      As an amateur cartoonist as a hobby and occasional freelance work, I am proficient with both 
+                      2D raster and vector technologies including - but not limited - Adobe Photoshop and Adobe Illustrator. In
+                      addition to 2D graphics, also have experience making floorplans and doing modeling in AutoCAD, Inventor, 
+                      3DS Max, and a little bit of Blender.
+                    </p>
+                  </div>
+            </div>
+        </div>
+        
+      </div>
+      <div class="projects" id="projects">
+        <div class="section-heading">
+          <h1>Projects</h1>
+        </div>
+
+        <div class="project-item" data-aos="fade-up" data-aos-duration="1000">
+          <h3>Color Guessing Game</h3>
+          <div class="project-img">
+            <a href="https://bowerbank93.github.io/color-game/" target="_blank"><img src="/imgs//projects/color-game.png" alt="Color Game Image" /></a>
+          </div>
+
+          <div class="project-desc">
+            <span class="skills">HTML</span> <span class="skills">CSS</span>
+            <span class="skills">JavaScript</span>
+            <p>
+              A Javascript page that generates a random color whose RGB code is
+              displayed at the top and asks the user to select the corresponding
+              color.
+            </p>
+            <a href="https://bowerbank93.github.io/color-game/" target="_blank"><button>View Project</button></a>
+            <a href="https://github.com/Bowerbank93/color-game" target="_blank"><button>Github</button></a> 
+          </div>
+        </div>
+
+        <div class="project-item" data-aos="fade-up" data-aos-duration="1000">
+                <h3>Keyboard Beat Maker</h3>
+                <div class="project-img">
+                  <a href="https://bowerbank93.github.io/beat-maker/" target="_blank"><img src="/imgs/projects/beat-maker.png" alt="Beat-Maker Image" /></a>
+                </div>
+      
+                <div class="project-desc">
+                  <span class="skills">JavaScript</span>
+                  <p>
+                    A Javascript page that plays sound samples and display a 
+                    simple, color-changing animation. Just press any key A-Z to play a sound.
+                  </p>
+                  <a href="https://bowerbank93.github.io/beat-maker/" target="_blank"><button>View Project</button></a>
+                  <a href="https://github.com/Bowerbank93/beat-maker" target="_blank"><button>Github</button></a> 
+                </div>
+              </div>
+
+            <div class="project-item" data-aos="fade-up" data-aos-duration="1000">
+                <h3>Simple To-Do List</h3>
+                <div class="project-img">
+                    <a href="https://bowerbank93.github.io/todo-list/" target="_blank"><img src="/imgs/projects/to-do-list.png" alt="To-Do list Image" /></a>
+                </div>
+        
+                <div class="project-desc">
+                    <span class="skills">JQuery</span>
+                    <p>
+                    A Javascript page that generates a random color whose RGB code is
+                    displayed at the top and asks the user to select the corresponding
+                    color.
+                    </p>
+                    <a href="https://bowerbank93.github.io/todo-list/" target="_blank"><button>View Project</button></a>
+                    <a href="https://github.com/Bowerbank93/todo-list" target="_blank"><button>Github</button></a> 
+                </div>
+                </div>
+
+                <div class="project-item" data-aos="fade-up" data-aos-duration="1000">
+                    <h3>Band Tour Site</h3>
+                    <div class="project-img">
+                        <a href="https://bowerbank93.github.io/band-website/" target="_blank"><img src="/imgs/projects/band-tour-site.png" alt="Band Tour Image" /></a>
+                    </div>
+            
+                    <div class="project-desc">
+                        <span class="skills">HTML</span> <span class="skills">CSS</span>
+                        <span class="skills">Bootstrap</span> <span class="skills">JQuery</span>
+                        <p>
+                          A simple single page website for a fictional music band going on tour. Made using Bootstrap in a
+                          style different than usual Boostrap layouts
+                        </p>
+                        <a href="https://bowerbank93.github.io/band-website/" target="_blank"><button>View Project</button></a>
+                        <a href="https://github.com/Bowerbank93/band-website" target="_blank"><button>Github</button></a> 
+                    </div>
+                    </div>
+      </div>
+      <div class="contact" id="contact">
+        <div class="section-heading">
+            <h1>Contact</h1>
+        </div>
+
+        <form action="">
+          <label for="name">Name</label>
+          <input type="text" name="name" required />
+          <label for="email">Email Address</label>
+          <input type="email" name="email" required />
+          <label for="message">Message</label>
+          <textarea name="subject" id="subject" cols="10" rows="10"></textarea>
+          <input class="submit" type="submit">
+        </form>
+      </div>
+      <footer>
+        <div class="socials">
+            <a href="https://github.com/Bowerbank93" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/malachi-bowerbank/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+
+        <div class="copyright">
+            <p>	&copy; Malachi Bowerbank 2019</p>
+        </div>
+
+        <div class="contacts">
+          <a href="tel:734-945-9114">(734)-945-9114</a>
+        • <a href="mailto:malachibbank@gmail.com"><i class="far fa-envelope"></i> Email</a>
+        </div>
+      </footer>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        once: true
+      });
+    </script>
+  </body>
+</html>

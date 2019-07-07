@@ -17,7 +17,7 @@
   }
   
   h1 {
-      font-size: 4em;
+      font-size: 3em;
       text-align: center;
       margin-bottom: 2rem;
   }
@@ -55,7 +55,6 @@
   .navbar {
     align-self: flex-start;
     width: 100%;
-    padding: 10px 0;
     position: fixed;
     background-color: #000217;
     z-index: 9999;
@@ -69,6 +68,7 @@
     display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
     display: -ms-flexbox;  /* TWEENER - IE 10 */
     display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+    padding: 10px;
   }
   
   /* Landing Area */
@@ -79,7 +79,6 @@
   
   .landing-text h1 {
       font-family: 'Carter One', cursive;
-      font-size: 5em;
       margin-bottom: 1px;
   }
   
@@ -166,8 +165,7 @@
           PROJECTS STYLES
 ***********************************/
   .projects {
-    padding: 50px;
-    margin: 100px auto; 
+    margin: 0 auto; 
   }
   
   .project-item {
@@ -176,7 +174,6 @@
       border-radius: 10px;
       width: 100%;
       margin: 20px auto;
-      padding: 5px;
   }
 
   .project-desc {
@@ -228,10 +225,8 @@
           CONTACT STYLES
 ***********************************/
   .contact {
-    grid-area: contact;
     margin: 100px auto;
     width: 100%;
-    padding-top: 50px;
 }
 
 .contact label, input, textarea {

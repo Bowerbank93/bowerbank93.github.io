@@ -127,14 +127,14 @@
   }
 
   .skill-img img {
-      width: 350px;
+      width: 100%;
       border-radius: 10px;
       padding: 10px;
       background: #ddd;
   }
 
   .skillbox {
-      width: 400px;
+      max-width: 400px;
       margin: 20px auto;
       padding: 5px;
       border: 1px solid #EA80FC;

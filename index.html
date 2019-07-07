@@ -18,25 +18,15 @@
 
     <!-- EMAILJS functionality-->
     <script>
-      var myform = $("form#myform");
-      myform.submit(function(event){
-        event.preventDefault();
-
-        // Change to your service ID, or keep using the default service
-        var service_id = "default_service";
-        var template_id = "template_iG8xdNX5";
-
-        myform.find("button").text("Sending...");
-        emailjs.sendForm(service_id,template_id,myform[0])
-          .then(function(){ 
-            alert("Your message has been sent!");
-            myform.find("button").text("Send");
-          }, function(err) {
-            alert("Send email failed!\r\n Response:\n " + JSON.stringify(err));
-            myform.find("button").text("Send");
-          });
-        return false;
-      });
+       window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                this.contact_number.value = Math.random() * 100000 | 0;
+                emailjs.sendForm('malachibbank_gmail_com', 'portfolio_website', this);
+                alert("Your message has been sent!");
+                window.location.reload();
+            });
+        }
     </script>
     
 
@@ -254,14 +244,15 @@
             <h1>Contact</h1>
         </div>
 
-        <form id="myform" method="POST">
+        <form id="contact-form">
+          <input type="hidden" name="contact_number">
           <label for="name">Name</label>
-          <input type="text" name="from_name" required />
+          <input type="text" name="user_name" required />
           <label for="email">Email Address</label>
-          <input type="email" name="from_email" required />
+          <input type="email" name="user_email" required />
           <label for="message">Message</label>
-          <textarea name="message_html" id="subject" cols="10" rows="10"></textarea>
-          <input class="submit" type="submit">
+          <textarea name="message_html" id="subject" cols="10" rows="10" required></textarea>
+          <input class="submit" type="submit" value="Send">
         </form>
       </div>
       <footer>
